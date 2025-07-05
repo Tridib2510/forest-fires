@@ -27,7 +27,7 @@ def predict_datapoint():
        DMC=float(request.form.get('DMC'))
        ISI=float(request.form.get('ISI'))
        Classes=float(request.form.get('Classes'))
-       Region=float(request.form.get('Region'))
+       Region=float(0 if request.form.get('Region')=='Bejaia Region' else 1)
       #For the new datapoints
        new_data_scaled=standard_scaler.transform([[Temperature,RH,Ws,Rain,FFMC,DMC,ISI,Classes,Region]])
        result=ridge_model.predict(new_data_scaled)
@@ -37,4 +37,4 @@ def predict_datapoint():
     return render_template('home.html')
 
 if __name__=="__main__":
-    app.run(host="0.0.0.0")#This 0.0.0.0 map to the local IP address of your device
+    app.run(host="0.0.0.0",debug=True)#This 0.0.0.0 map to the local IP address of your device

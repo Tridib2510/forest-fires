@@ -61,7 +61,8 @@
             letter-spacing: 1px;
         }
 
-        .form-group input {
+        .form-group input,
+        .form-group select {
             width: 100%;
             padding: 15px 20px;
             border: 2px solid #e0e6ed;
@@ -73,7 +74,8 @@
             outline: none;
         }
 
-        .form-group input:focus {
+        .form-group input:focus,
+        .form-group select:focus {
             border-color: #667eea;
             background: white;
             box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
@@ -83,6 +85,10 @@
         .form-group input::placeholder {
             color: #95a5a6;
             font-style: italic;
+        }
+
+        .form-group select {
+            cursor: pointer;
         }
 
         .form-grid {
@@ -315,7 +321,11 @@
                         <span class="tooltiptext">Geographic region identifier</span>
                     </div>
                 </label>
-                <input type="text" name="Region" placeholder="Region" required />
+                <select name="Region" required>
+                    <option value="">Select Region</option>
+                    <option value="Bejaia Region">Bejaia Region</option>
+                    <option value="Sidi-Bel Abbes Region">Sidi-Bel Abbes Region</option>
+                </select>
             </div>
 
             <button type="submit" class="submit-btn">
