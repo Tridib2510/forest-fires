@@ -137,11 +137,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📧 Contact
 
-For questions or support, please contact:
 
-- Email: your.email@example.com
-- Project Link: [https://github.com/yourusername/fwi-prediction-model](https://github.com/yourusername/fwi-prediction-model)
-
----
 
 **⚠️ Note**: This model is designed for research and educational purposes. For operational fire management decisions, consult with professional meteorologists and fire management authorities.
