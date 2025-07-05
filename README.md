@@ -63,6 +63,7 @@ Input 'Sidi-Bel Abbes Region' → Model receives 1
 
 📁 Project Structure
 fwi-prediction-model/
+
 ├── app.py                 # Flask application
 ├── model/
 │   └── fwi_model.pkl     # Trained model file
